@@ -9,13 +9,11 @@ Short Message Service (SMS) has grown rapidly and the reduction in the cost of m
 3)	K Nearest Neighbors
 4)	Random Forest
 5)	AdaBoost  
-and the results are compared.
 
-
-Dataset Description
+Dataset Description 
 We use a database of 5574 text messages from UCI Machine Learning repository gathered in 2012. It contains a collection of 425 SMS spam messages manually extracted from the Grumbletext Web site (a UK forum in which cell phone users make public claims about SMS spam), a subset of 3,375 SMS randomly chosen non-spam (ham) messages of the NUS SMS Corpus (NSC), a list of 450 SMS non-spam messages collected from Caroline Tag’s PhD Thesis, and the SMS Spam Corpus v.0.1 Big ( 1,002 SMS non-spam and 322 spam messages publicly available). The dataset is a large text file, in which each line starts with the label of the message, followed by the text message string. After preprocessing of the data and extraction of features, machine learning techniques such as naive Bayes, SVM, and other methods are applied to the samples, and their performances are compared.
 
-Data Preprocessing, Feature Vector and Models Used:
+Data Preprocessing, Feature Vector and Models Used:  
 
 1)	The Dataset had two columns: 1st containing the class of data ham or spam and 2nd containing a string which is the text message.
 2)	All English Stopwords were imported from NLTK and were removed if found in the sentences.
@@ -29,7 +27,7 @@ An encoded vector is returned with a length of the entire vocabulary and an inte
 5)	 We next perform the test train split in the ratio of 70:30, we select the samples randomly.
 6)	We feed the X_train, X_test, y_train, y_test to different ML models namely, Multinomial naïve bayes, Support vector machines, K nearest neighbours, Random forest and AdaBoost.
  
-Comparison of Outputs 
+Comparison of Outputs   
 
 Results obtained by our implemented models:
 Unique values in the Class set:  ['ham' 'spam']
