@@ -1,4 +1,7 @@
 # Spam-Detection
+
+NOTE : To use, change line 14 of spamdetect.py according to the location of file on your computer.
+
 SMS Spam Detection using different ML models: Multinomial Naive Bayes, Support Vector Machine (SVM), K Nearest Neighbours (KNN), Random Forest and AdaBoost
 
 Problem Statement  

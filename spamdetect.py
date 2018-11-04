@@ -11,8 +11,8 @@ from sklearn.ensemble import AdaBoostClassifier
 from sklearn.svm import LinearSVC
 from sklearn.metrics import f1_score,accuracy_score
 
-#read data in CSV format
-data = pd.read_csv("C://Users//Shreya//Desktop//Sem 7//Group7A Assignment 2//spam.csv",encoding='latin')
+#read data in CSV format according to your PC's address
+data = pd.read_csv("C://Users//Shreya//Desktop//Sem 7//Group7A Assignment 2//spam.csv",encoding='latin')	#Change here
 
 data.rename(columns={'v1':'Class','v2':'Text'},inplace=True)
 data['numClass'] = data['Class'].map({'ham':0, 'spam':1})
@@ -46,7 +46,7 @@ X = vectorizer.fit_transform(data.Text)
 y = data.numClass
 
 #Performing test train Split 
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.30, train_size=0.70, random_state=42)
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.30, train_size=0.70, random_state=None)
 
 # Show the results of the split
 print("\n")
